@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Space+Grotesk:wght@400;500;600;700&family=Uncial+Antiqua&display=swap');
+@import 'tailwindcss';
+
+:root {
+  font-family: 'Space Grotesk', sans-serif;
+  color: #eee9d7;
+  background: #070907;
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+}
+
+* { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; min-width: 320px; background: #070907; }
+button, input { font: inherit; }
+a { color: inherit; text-decoration: none; }
+::selection { color: #071008; background: #b6e34b; }
+
