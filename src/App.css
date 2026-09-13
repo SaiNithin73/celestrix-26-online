@@ -1,6 +1,6 @@
 :root { --ink: #eee9d7; --muted: #9b9b8a; --line: rgba(238,233,215,.14); --green: #b6e34b; --void: #070907; --mono: 'DM Mono', monospace; --display: 'Uncial Antiqua', Georgia, serif; }
 body { background: radial-gradient(circle at 50% -10%, #1a2817 0, #070907 42rem), #070907; }
-body:has(.hero) .hero { background-image: linear-gradient(90deg, rgba(4, 8, 5, .96) 0%, rgba(4, 8, 5, .72) 43%, rgba(4, 8, 5, .2) 100%), linear-gradient(180deg, rgba(4, 8, 5, .16), #070907 96%), url('./assets/loki-bg.jpg'); background-position: center, center, 50% 48%; background-size: cover; background-repeat: no-repeat; }
+body:has(.hero) .hero { background-image: linear-gradient(90deg, rgba(4, 8, 5, .96) 0%, rgba(4, 8, 5, .72) 43%, rgba(4, 8, 5, .2) 100%), linear-gradient(180deg, rgba(4, 8, 5, .16), #070907 96%), url('./assets/loki-bg-landscape.jpg'); background-position: center, center, center; background-size: cover; background-repeat: no-repeat; }
 body:has(.hero) .hero:before { content: ''; position: absolute; inset: 0; background: radial-gradient(circle at 74% 42%, rgba(182, 227, 75, .19), transparent 27%), linear-gradient(118deg, transparent 45%, rgba(218, 194, 104, .1) 45.2%, transparent 45.6%); mix-blend-mode: screen; pointer-events: none; }
 body:has(.hero) .hero-copy { text-shadow: 0 2px 18px rgba(0, 0, 0, .72); }
 body:has(.hero) .hero h1 { text-shadow: 0 0 2px #fff, 0 0 28px #b6e34b45, 0 4px 24px rgba(0, 0, 0, .8); }
