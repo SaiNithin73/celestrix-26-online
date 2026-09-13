@@ -114,14 +114,13 @@ footer { padding: 100px max(40px, calc((100% - 1160px) / 2)) 25px; border-top: 1
 .event-page { --accent: var(--green); --soft: #b6e34b22; }
 .event-page .navbar { position: fixed; }
 .event-page[style*="--accent: #46b9ff"] .event-hero { position: relative; max-width: none; min-height: 760px; padding: 170px max(40px, calc((100% - 1160px) / 2)) 90px; background-image: linear-gradient(90deg, rgba(3, 11, 31, .97) 0%, rgba(3, 11, 31, .78) 43%, rgba(3, 11, 31, .2) 100%), linear-gradient(180deg, rgba(3, 11, 31, .14), #070b1b 96%), url('./assets/thor.jpg'); background-position: center, center, 62% center; background-size: cover; background-repeat: no-repeat; overflow: hidden; }
-.event-page[style*="--accent: #46b9ff"] .event-hero:before { content: ''; position: absolute; z-index: 1; inset: 0; background-image: linear-gradient(90deg, rgba(3, 11, 31, .97) 0%, rgba(3, 11, 31, .78) 43%, rgba(3, 11, 31, .2) 100%), linear-gradient(180deg, rgba(3, 11, 31, .14), #070b1b 96%), url('./assets/thor%202.jpeg'); background-position: center, center, center; background-size: cover; background-repeat: no-repeat; opacity: 0; animation: quizverse-slide-two 10s ease-in-out infinite; pointer-events: none; }
-.event-page[style*="--accent: #46b9ff"] .event-hero:after { content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none; background: linear-gradient(90deg, rgba(3, 11, 31, .82), rgba(3, 11, 31, .18)), radial-gradient(circle at 76% 28%, rgba(161, 220, 255, .28), transparent 25%), linear-gradient(120deg, transparent 48%, rgba(120, 211, 255, .12) 48.2%, transparent 48.7%), url('./assets/thor%203.jpg'); background-position: center, center, center, center; background-size: cover; background-repeat: no-repeat; mix-blend-mode: screen; opacity: .28; animation: quizverse-slide-three 14s ease-in-out infinite; }
+.event-page[style*="--accent: #46b9ff"] .event-hero:before { content: ''; position: absolute; z-index: 1; inset: 0; background-image: linear-gradient(90deg, rgba(3, 11, 31, .97) 0%, rgba(3, 11, 31, .78) 43%, rgba(3, 11, 31, .2) 100%), linear-gradient(180deg, rgba(3, 11, 31, .14), #070b1b 96%), url('./assets/thor%20.jpg'); background-position: center, center, center; background-size: cover; background-repeat: no-repeat; opacity: 0; animation: quizverse-slide-two 10s ease-in-out infinite; pointer-events: none; }
+.event-page[style*="--accent: #46b9ff"] .event-hero:after { content: ''; position: absolute; z-index: 1; inset: 0; pointer-events: none; background: radial-gradient(circle at 76% 28%, rgba(161, 220, 255, .28), transparent 25%); mix-blend-mode: screen; }
 .event-page[style*="--accent: #46b9ff"] .event-hero-copy, .event-page[style*="--accent: #46b9ff"] .event-gem { position: relative; z-index: 2; }
 .event-page[style*="--accent: #46b9ff"] .event-hero-copy { flex: 1 1 0; max-width: 650px; min-width: 0; }
 .event-page[style*="--accent: #46b9ff"] .event-hero h1 { max-width: 100%; }
 .event-page[style*="--accent: #46b9ff"] .event-gem { width: 300px; margin-left: 70px; opacity: .72; }
 @keyframes quizverse-slide-two { 0%, 38% { opacity: 0; } 50%, 88% { opacity: 1; } 100% { opacity: 0; } }
-@keyframes quizverse-slide-three { 0%, 45% { opacity: .08; } 60%, 90% { opacity: .34; } 100% { opacity: .08; } }
 .event-page[style*="--accent: #46b9ff"] .event-hero h1 { color: #f5fbff; font-family: Georgia, 'Times New Roman', serif; font-size: clamp(4rem, 8vw, 7.6rem); font-weight: 900; letter-spacing: .015em; line-height: .82; text-transform: uppercase; text-shadow: 0 2px 0 #b9e8ff, 0 0 3px #fff, 0 0 18px #46b9ff, 0 0 45px #167cff; }
 .event-page[style*="--accent: #46b9ff"] .event-hero-copy>p { color: #d9f2ff; }
 .event-page[style*="--accent: #46b9ff"] .event-gem:after { content: ''; position: absolute; inset: 4%; border: 1px solid rgba(142,220,255,.2); border-radius: 50%; animation: spin-reverse 24s linear infinite; }
@@ -130,8 +129,8 @@ footer { padding: 100px max(40px, calc((100% - 1160px) / 2)) 25px; border-top: 1
 .quizverse-levels .eyebrow { position: relative; z-index: 1; margin-bottom: 9px; color: #8edcff; }
 .quizverse-levels strong { position: relative; z-index: 1; color: #eaf9ff; font-family: Georgia, 'Times New Roman', serif; font-size: 2.3rem; font-weight: 400; line-height: .8; }
 .quizverse-levels b { position: relative; z-index: 1; margin-top: 6px; color: #8edcff; font-family: var(--mono); font-size: .67rem; letter-spacing: .12em; }
-.quizverse-levels p { position: relative; z-index: 1; max-width: 245px; margin-top: 6px; color: #b3d6e5; font-size: .73rem; line-height: 1.35; }
-.level-tabs { position: absolute; z-index: 2; right: 18px; bottom: 15px; display: flex; gap: 6px; }
+.quizverse-levels p { position: relative; z-index: 1; max-width: 100%; margin-top: 6px; color: #b3d6e5; font-size: .73rem; line-height: 1.35; }
+.level-tabs { position: relative; z-index: 2; display: flex; justify-content: flex-end; gap: 6px; margin-top: 12px; }
 .level-tabs button { display: grid; place-items: center; width: 28px; height: 28px; border: 1px solid rgba(70,185,255,.45); color: #80b5ca; background: transparent; cursor: pointer; }
 .level-tabs button:hover, .level-tabs button.active { border-color: #8edcff; color: #04101e; background: #8edcff; }
 .level-tabs span { font-family: var(--mono); font-size: .58rem; }
@@ -216,7 +215,7 @@ footer { padding: 100px max(40px, calc((100% - 1160px) / 2)) 25px; border-top: 1
 	.quizverse-levels { width: min(100%, 290px); min-height: 140px; margin-top: 24px; padding: 15px 16px 13px; }
 	.quizverse-levels strong { font-size: 2rem; }
 	.quizverse-levels p { max-width: 190px; font-size: .68rem; }
-	.level-tabs { right: 14px; bottom: 13px; }
+	.level-tabs { margin-top: 12px; }
 	.event-content, .event-form-wrap { margin-left: 18px; margin-right: 18px; }
 	.event-main > h2 { font-size: 1.7rem; }
 	.event-aside { padding: 18px; }
