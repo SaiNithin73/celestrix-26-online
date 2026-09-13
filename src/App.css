@@ -141,7 +141,8 @@ footer { padding: 100px max(40px, calc((100% - 1160px) / 2)) 25px; border-top: 1
 .mini-contact b, .mini-contact small { display: block; }
 .mini-contact b { color: #e3dfce; font-size: .9rem; }
 .mini-contact small { margin-top: 4px; color: #929987; font-family: var(--mono); font-size: .57rem; }
-.qr-placeholder { display: grid; place-items: center; gap: 7px; margin-top: 22px; padding: 22px 10px; border: 1px dashed var(--accent); color: var(--accent); }
+.qr-placeholder { display: grid; place-items: center; gap: 7px; margin-top: 22px; padding: 142px 10px 22px; border: 1px dashed var(--accent); color: var(--accent); background-image: url('./assets/QR%20code.jpg'); background-position: center 18px; background-repeat: no-repeat; background-size: 112px 112px; }
+.qr-placeholder svg { display: none; }
 .qr-placeholder span, .qr-placeholder small { font-family: var(--mono); font-size: .55rem; letter-spacing: .1em; }
 .qr-placeholder small { color: #89917c; }
 .event-prizes { padding: 100px max(40px, calc((100% - 1160px) / 2)); background: var(--soft); border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
